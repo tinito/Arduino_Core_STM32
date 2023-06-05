@@ -6159,6 +6159,12 @@ GenG0.menu.upload_method.dfuMethod.upload.protocol=2
 GenG0.menu.upload_method.dfuMethod.upload.options=
 GenG0.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
 
+GenG0.menu.upload_method.hidMethod=HID Bootloader 2.2
+GenG0.menu.upload_method.hidMethod.upload.protocol=hid22
+GenG0.menu.upload_method.hidMethod.upload.tool=hid_upload
+GenG0.menu.upload_method.hidMethod.build.flash_offset=0x4000
+GenG0.menu.upload_method.hidMethod.build.bootloader_flags=-DBL_HID -DVECT_TAB_OFFSET={build.flash_offset}
+
 ###############################
 # Generic G4
 GenG4.name=Generic STM32G4 series
